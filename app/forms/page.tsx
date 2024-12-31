@@ -127,6 +127,7 @@ const Page = () => {
                           border: "none",
                           borderRadius: "5px",
                           cursor: "pointer",
+                          marginTop: "10px",
                         },
                       },
                       children: ["Enviar"],
