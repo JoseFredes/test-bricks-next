@@ -9,15 +9,17 @@ function renderReactComponent(json: JSONComponent): JSX.Element {
   return React.createElement(
     type,
     {
-      ...props, // Pasa todas las props como atributos del elemento
-      key: props.key || undefined, // Asegura una clave única para cada elemento
+      ...props,
+      key: props.key || undefined, // Asegura que cada elemento tenga una clave única
     },
     Array.isArray(children)
-      ? children.map(
-          (child, index) =>
-            typeof child === "string"
-              ? child // Si es texto, lo pasa directamente
-              : renderReactComponent(child) // Renderiza recursivamente los hijos
+      ? children.map((child, index) =>
+          typeof child === "string"
+            ? child
+            : renderReactComponent({
+                ...child,
+                props: { ...child.props, key: child.props?.key || index }, // Agrega la clave única
+              })
         )
       : null
   );
