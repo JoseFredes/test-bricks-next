@@ -71,6 +71,13 @@ const json: JSONComponent = {
       },
       children: ["Click me!"],
     },
+    {
+      type: "p",
+      props: {
+        style: { fontSize: "16px", color: "#666" },
+      },
+      children: ["This is another paragraph."],
+    },
   ],
 };
 
