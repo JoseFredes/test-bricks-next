@@ -12,6 +12,7 @@ const json: JSONComponent = {
       padding: "20px",
       backgroundColor: "#f5f5f5",
       border: "1px solid #ddd",
+      typography: "Arial, sans-serif",
     },
   },
   children: [
