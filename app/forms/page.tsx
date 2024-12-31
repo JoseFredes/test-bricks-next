@@ -25,6 +25,7 @@ const Page = () => {
               //   alignItems: "center",
               marginBottom: "20px",
               marginTop: "10px",
+              padding: "30px",
               justifyContent: "space-between",
             },
           },
