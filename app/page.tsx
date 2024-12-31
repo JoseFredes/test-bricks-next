@@ -283,6 +283,37 @@ const Page = () => {
             },
           ],
         },
+        {
+          type: "footer",
+          props: {
+            style: {
+              padding: "20px",
+              backgroundColor: "#333",
+              color: "#fff",
+              textAlign: "center",
+              marginTop: "20px",
+            },
+          },
+          children: [
+            {
+              type: "p",
+              children: [
+                {
+                  type: "span",
+                  children: ["Hecho con ❤️ por "],
+                },
+                {
+                  type: "a",
+                  props: {
+                    href: "https://github.com/JoseFredes",
+                    style: { color: "#fff", textDecoration: "none" },
+                  },
+                  children: ["@JoseFredes"],
+                },
+              ],
+            },
+          ],
+        },
       ],
     };
 
