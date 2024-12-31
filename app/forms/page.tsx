@@ -2,10 +2,12 @@
 
 import React, { useEffect } from "react";
 import { JSONComponent, renderComponentFromJSON } from "jbricks";
-import { simpleContactForm } from "./examples/simpleContactForm";
-import { surveyForm } from "./examples/surveyForm";
-import { loginForm } from "./examples/loginForm";
-import { registationForm } from "./examples/registrationForm";
+import {
+  simpleContactForm,
+  loginForm,
+  surveyForm,
+  registationForm,
+} from "./examples";
 
 const Page = () => {
   useEffect(() => {
