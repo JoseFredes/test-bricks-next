@@ -32,6 +32,7 @@ const Page = () => {
         aboutSection,
         // Contact Section
         contactSection,
+        // Footer
         {
           type: "footer",
           props: {
