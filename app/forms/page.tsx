@@ -22,7 +22,6 @@ const Page = () => {
           props: {
             style: {
               display: "flex",
-              //   alignItems: "center",
               marginBottom: "20px",
               marginTop: "10px",
               padding: "30px",
