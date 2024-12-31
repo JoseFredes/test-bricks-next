@@ -417,6 +417,7 @@ const Page = () => {
                           border: "none",
                           borderRadius: "5px",
                           cursor: "pointer",
+                          marginTop: "20px",
                         },
                       },
                       children: ["Registrar"],
