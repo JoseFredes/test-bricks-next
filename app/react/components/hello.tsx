@@ -16,7 +16,6 @@ export default function ReactPage() {
   const [content, setContent] = useState<JSX.Element | null>(null);
 
   useEffect(() => {
-    // Renderiza dinámicamente el contenido JSON
     const domNode = renderComponentFromJSON(json);
     setContent(
       <div
