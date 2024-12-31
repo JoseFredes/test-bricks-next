@@ -3,7 +3,6 @@ import { JSX } from "react";
 
 export function safeRenderReactComponent(json: JSONComponent): JSX.Element {
   if (typeof window === "undefined" || typeof document === "undefined") {
-    // Devuelve un placeholder si el código se ejecuta en el servidor.
     return <div>SSR: Placeholder</div>;
   }
 
