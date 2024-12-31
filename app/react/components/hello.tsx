@@ -26,6 +26,5 @@ export default function ReactPage() {
     );
   }, []);
 
-  // Mientras se renderiza, muestra un placeholder
   return content || <div>Cargando...</div>;
 }
