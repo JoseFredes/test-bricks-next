@@ -1,11 +1,5 @@
-import { renderReactComponent, JSONComponent } from "jbricks";
+import ReactPage from "./components/hello";
 
-const json: JSONComponent = {
-  type: "div",
-  props: { className: "test" },
-  children: ["Hello, React!"],
-};
-
-const ReactComponent = renderReactComponent(json);
-
-export default ReactComponent;
+export default function Page() {
+  return <ReactPage />;
+}
