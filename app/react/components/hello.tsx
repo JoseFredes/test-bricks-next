@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { renderReactComponent } from "../utils/renderReactComponent";
 import { JSONComponent } from "jbricks";
 
