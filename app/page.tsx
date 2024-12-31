@@ -30,8 +30,8 @@ const Page = () => {
         featuresSection,
         // About Section
         aboutSection,
-        // Contact Section
-        contactSection,
+        // // Contact Section
+        // contactSection,
         // Footer
         footerSection,
       ],
