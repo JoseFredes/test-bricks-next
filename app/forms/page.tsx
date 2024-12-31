@@ -5,7 +5,6 @@ import { JSONComponent, renderComponentFromJSON } from "jbricks";
 
 const Page = () => {
   useEffect(() => {
-    // Definición JSON
     const uiDefinition: JSONComponent = {
       type: "div",
       props: {
@@ -461,7 +460,6 @@ const Page = () => {
       ],
     };
 
-    // Renderizar el JSON en un contenedor
     const appContainer = document.getElementById("app");
     if (appContainer) {
       const renderedComponent = renderComponentFromJSON(uiDefinition);
