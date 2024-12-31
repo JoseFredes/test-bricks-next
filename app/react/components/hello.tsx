@@ -1,5 +1,6 @@
 "use client";
 
+import { on } from "events";
 import { renderReactComponent } from "../utils/renderReactComponent";
 import { JSONComponent } from "jbricks";
 
@@ -17,14 +18,37 @@ const json: JSONComponent = {
   },
   children: [
     {
-      type: "h1",
+      type: "div",
       props: {
         style: {
           fontSize: "32px",
           color: "#333",
           marginBottom: "20px",
         },
-        children: ["Hello from React"],
+        children: [
+          {
+            type: "h1",
+            props: {
+              children: ["Hello from React!"],
+            },
+          },
+          {
+            type: "button",
+            props: {
+              style: {
+                backgroundColor: "#00796b",
+                color: "#fff",
+                padding: "10px 5px",
+                border: "none",
+                borderRadius: "4px",
+                cursor: "pointer",
+                height: "40px",
+                marginTop: "20px",
+              },
+              children: ["Home"],
+            },
+          },
+        ],
       },
     },
     {
