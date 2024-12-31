@@ -18,7 +18,7 @@ function renderReactComponent(json: JSONComponent): JSX.Element {
             ? child
             : renderReactComponent({
                 ...child,
-                props: { ...child.props, key: child.props?.key || index }, // Agrega la clave única
+                props: { ...child.props, key: child.props?.key || index },
               })
         )
       : null
