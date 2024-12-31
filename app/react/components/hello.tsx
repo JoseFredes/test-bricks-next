@@ -1,6 +1,8 @@
 "use client";
 
-import { renderReactComponent, JSONComponent } from "jbricks";
+import React from "react";
+import { JSONComponent } from "jbricks";
+import { safeRenderReactComponent } from "../utils/safeRenderReactComponent";
 
 const json: JSONComponent = {
   type: "div",
@@ -12,5 +14,5 @@ const json: JSONComponent = {
 };
 
 export default function ReactPage() {
-  return renderReactComponent(json);
+  return safeRenderReactComponent(json);
 }
