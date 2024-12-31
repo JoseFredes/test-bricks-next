@@ -36,7 +36,7 @@ const Page = () => {
             style: {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              gap: "20px",
+              gap: "25px",
               padding: "40px",
               backgroundColor: "#ffffff",
             },
@@ -57,7 +57,13 @@ const Page = () => {
               children: [
                 {
                   type: "h3",
-                  props: { style: { fontSize: "24px", color: "#333" } },
+                  props: {
+                    style: {
+                      fontSize: "24px",
+                      color: "#333",
+                      marginBottom: "10px",
+                    },
+                  },
                   children: ["Formulario de Contacto"],
                 },
                 {
@@ -77,8 +83,9 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          border: "none",
                           borderRadius: "4px",
+                          outline: "1px solid #00796b",
                         },
                       },
                     },
@@ -90,7 +97,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -102,7 +110,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -156,6 +165,9 @@ const Page = () => {
                     {
                       type: "label",
                       children: ["¿Cómo calificarías nuestro servicio?"],
+                      props: {
+                        style: { color: "#333", fontWeight: "bold" },
+                      },
                     },
                     {
                       type: "select",
@@ -163,24 +175,47 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
                       children: [
-                        { type: "option", props: { value: "excellent" }, children: ["Excelente"] },
-                        { type: "option", props: { value: "good" }, children: ["Bueno"] },
-                        { type: "option", props: { value: "average" }, children: ["Regular"] },
-                        { type: "option", props: { value: "poor" }, children: ["Malo"] },
+                        {
+                          type: "option",
+                          props: { value: "excellent" },
+                          children: ["Excelente"],
+                        },
+                        {
+                          type: "option",
+                          props: { value: "good" },
+                          children: ["Bueno"],
+                        },
+                        {
+                          type: "option",
+                          props: { value: "average" },
+                          children: ["Regular"],
+                        },
+                        {
+                          type: "option",
+                          props: { value: "poor" },
+                          children: ["Malo"],
+                        },
                       ],
                     },
                     {
                       type: "label",
                       children: ["¿Recomendarías nuestro servicio?"],
+                      props: {
+                        style: { color: "#333", fontWeight: "bold" },
+                      },
                     },
                     {
                       type: "input",
-                      props: { type: "checkbox", style: { marginBottom: "10px" } },
+                      props: {
+                        type: "checkbox",
+                        style: { marginBottom: "10px" },
+                      },
                     },
                     {
                       type: "button",
@@ -236,7 +271,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -249,7 +285,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -308,7 +345,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -321,7 +359,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
@@ -334,7 +373,8 @@ const Page = () => {
                         style: {
                           marginBottom: "10px",
                           padding: "10px",
-                          border: "1px solid #ccc",
+                          outline: "1px solid #00796b",
+                          border: "none",
                           borderRadius: "4px",
                         },
                       },
