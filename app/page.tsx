@@ -164,6 +164,11 @@ const Page = () => {
                   type: "span",
                   children: ["Acerca de JBricks"],
                 },
+                {
+                  type: "span",
+                  props: { style: { fontSize: "16px", color: "#555" } },
+                  children: [" (v1.0.0)"],
+                },
               ],
             },
             {
