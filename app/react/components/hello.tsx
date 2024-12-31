@@ -1,8 +1,27 @@
 "use client";
 
-import React, { JSX, useEffect, useState } from "react";
-import { JSONComponent, renderComponentFromJSON } from "jbricks";
-import { text } from "stream/consumers";
+import React, { JSX } from "react";
+import { JSONComponent } from "jbricks";
+
+function renderReactComponent(json: JSONComponent): JSX.Element {
+  const { type, props = {}, children = [] } = json;
+
+  return React.createElement(
+    type,
+    {
+      ...props, // Pasa todas las props como atributos del elemento
+      key: props.key || undefined, // Asegura una clave única para cada elemento
+    },
+    Array.isArray(children)
+      ? children.map(
+          (child, index) =>
+            typeof child === "string"
+              ? child // Si es texto, lo pasa directamente
+              : renderReactComponent(child) // Renderiza recursivamente los hijos
+        )
+      : null
+  );
+}
 
 const json: JSONComponent = {
   type: "div",
@@ -12,7 +31,7 @@ const json: JSONComponent = {
       padding: "20px",
       backgroundColor: "#f5f5f5",
       border: "1px solid #ddd",
-      typography: "Arial, sans-serif",
+      fontFamily: "Arial, sans-serif",
       textAlign: "center",
     },
   },
@@ -54,18 +73,5 @@ const json: JSONComponent = {
 };
 
 export default function ReactPage() {
-  const [content, setContent] = useState<JSX.Element | null>(null);
-
-  useEffect(() => {
-    const domNode = renderComponentFromJSON(json);
-    setContent(
-      <div
-        dangerouslySetInnerHTML={{
-          __html: domNode ? domNode.outerHTML : "",
-        }}
-      />
-    );
-  }, []);
-
-  return content || <div>Cargando...</div>;
+  return renderReactComponent(json);
 }
