@@ -167,7 +167,11 @@ const Page = () => {
                       type: "label",
                       children: ["¿Cómo calificarías nuestro servicio?"],
                       props: {
-                        style: { color: "#333", fontWeight: "bold" },
+                        style: {
+                          color: "#333",
+                          fontWeight: "bold",
+                          marginBottom: "10px",
+                        },
                       },
                     },
                     {
@@ -205,18 +209,34 @@ const Page = () => {
                       ],
                     },
                     {
-                      type: "label",
-                      children: ["¿Recomendarías nuestro servicio?"],
+                      type: "div",
                       props: {
-                        style: { color: "#333", fontWeight: "bold" },
+                        style: {
+                          display: "flex",
+                          alignItems: "center",
+                          marginBottom: "20px",
+                          marginTop: "10px",
+                        },
                       },
-                    },
-                    {
-                      type: "input",
-                      props: {
-                        type: "checkbox",
-                        style: { marginBottom: "10px" },
-                      },
+                      children: [
+                        {
+                          type: "label",
+                          children: ["¿Recomendarías nuestro servicio?"],
+                          props: {
+                            style: {
+                              color: "#333",
+                              fontWeight: "bold",
+                              marginRight: "10px",
+                            },
+                          },
+                        },
+                        {
+                          type: "input",
+                          props: {
+                            type: "checkbox",
+                          },
+                        },
+                      ],
                     },
                     {
                       type: "button",
@@ -252,7 +272,13 @@ const Page = () => {
               children: [
                 {
                   type: "h3",
-                  props: { style: { fontSize: "24px", color: "#333" } },
+                  props: {
+                    style: {
+                      fontSize: "24px",
+                      color: "#333",
+                      marginBottom: "20px",
+                    },
+                  },
                   children: ["Formulario de Inicio de Sesión"],
                 },
                 {
