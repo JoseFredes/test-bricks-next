@@ -57,6 +57,7 @@ const Page = () => {
                   borderRadius: "4px",
                   cursor: "pointer",
                   height: "40px",
+                  marginTop: "20px",
                 },
                 onClick: () => (window.location.href = "/"),
               },
