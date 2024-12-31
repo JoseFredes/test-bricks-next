@@ -45,7 +45,7 @@ const Page = () => {
               type: "button",
               props: {
                 style: {
-                  backgroundColor: "#007bff",
+                  backgroundColor: "#00796b",
                   color: "#fff",
                   padding: "5px 10px",
                   border: "none",
