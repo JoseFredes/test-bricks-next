@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BaseProps } from "../types/baseProps";
+import { BaseProps } from "../types/BaseProps";
 
 const CounterComponent: React.FC<BaseProps> = ({ className, style }) => {
   const [count, setCount] = useState(0);
