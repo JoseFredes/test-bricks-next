@@ -76,7 +76,7 @@ const json: JSONComponent = {
       props: {
         style: { fontSize: "16px", color: "#666" },
       },
-      children: ["This is another paragraph."],
+      children: ["This is another paragraph. Click the button above!"],
     },
   ],
 };
