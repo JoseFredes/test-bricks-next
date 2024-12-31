@@ -6,7 +6,7 @@ import {
   simpleContactForm,
   loginForm,
   surveyForm,
-  registationForm,
+  registrationForm,
 } from "./examples";
 
 const Page = () => {
@@ -84,7 +84,7 @@ const Page = () => {
             // Login Form
             loginForm,
             // Registration Form
-            registationForm,
+            registrationForm,
           ],
         },
       ],
