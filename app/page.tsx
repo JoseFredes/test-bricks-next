@@ -36,7 +36,6 @@ const Page = () => {
       ],
     };
 
-    // Renderizar el JSON en un contenedor
     const appContainer = document.getElementById("app");
     if (appContainer) {
       const renderedComponent = renderComponentFromJSON(uiDefinition);
