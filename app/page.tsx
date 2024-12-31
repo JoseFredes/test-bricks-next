@@ -11,7 +11,6 @@ import { footerSection } from "./components/homeBricks/footerSection";
 
 const Page = () => {
   useEffect(() => {
-    // Definición JSON
     const uiDefinition: JSONComponent = {
       type: "div",
       props: {
