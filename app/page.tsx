@@ -30,7 +30,6 @@ const Page = () => {
         // About Section
         aboutSection,
         // // Contact Section
-        // contactSection,
         // Footer
         footerSection,
       ],
