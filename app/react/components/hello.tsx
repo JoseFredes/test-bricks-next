@@ -25,32 +25,31 @@ const json: JSONComponent = {
           color: "#333",
           marginBottom: "20px",
         },
-        children: [
-          {
-            type: "h1",
-            props: {
-              children: ["Hello from React!"],
-            },
-          },
-          {
-            type: "button",
-            props: {
-              style: {
-                backgroundColor: "#00796b",
-                color: "#fff",
-                padding: "10px 5px",
-                border: "none",
-                borderRadius: "4px",
-                cursor: "pointer",
-                height: "40px",
-                marginTop: "20px",
-              },
-              onClick: () => (window.location.href = "/"),
-              children: ["Home"],
-            },
-          },
-        ],
       },
+      children: [
+        {
+          type: "h1",
+          props: {},
+          children: ["Hello from React!"],
+        },
+        {
+          type: "button",
+          props: {
+            style: {
+              backgroundColor: "#00796b",
+              color: "#fff",
+              padding: "10px 5px",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+              height: "40px",
+              marginTop: "20px",
+            },
+            onClick: () => (window.location.href = "/"),
+          },
+          children: ["Home"],
+        },
+      ],
     },
     {
       type: "p",
