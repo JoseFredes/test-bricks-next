@@ -32,6 +32,20 @@ const json: JSONComponent = {
       },
       children: ["This is a paragraph."],
     },
+    {
+      type: "button",
+      props: {
+        style: {
+          padding: "10px",
+          backgroundColor: "#00796b",
+          color: "#fff",
+          border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
+        },
+      },
+      children: ["Click me!"],
+    },
   ],
 };
 
