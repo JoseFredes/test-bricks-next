@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { JSONComponent } from "jbricks";
 import { safeRenderReactComponent } from "../utils/safeRenderReactComponent";
 
