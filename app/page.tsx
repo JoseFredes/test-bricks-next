@@ -6,7 +6,7 @@ import { navbar } from "./components/homeBricks/navbar";
 import { heroSection } from "./components/homeBricks/heroSection";
 import { featuresSection } from "./components/homeBricks/featuresSection";
 import { aboutSection } from "./components/homeBricks/aboutSection";
-import { contactSection } from "./components/homeBricks/contactSection";
+// import { contactSection } from "./components/homeBricks/contactSection";
 import { footerSection } from "./components/homeBricks/footerSection";
 
 const Page = () => {
