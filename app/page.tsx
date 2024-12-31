@@ -159,7 +159,12 @@ const Page = () => {
             {
               type: "h2",
               props: { style: { fontSize: "28px", color: "#333" } },
-              children: ["Acerca de JBricks"],
+              children: [
+                {
+                  type: "span",
+                  children: ["Acerca de JBricks"],
+                },
+              ],
             },
             {
               type: "p",
