@@ -312,6 +312,19 @@ const Page = () => {
                 },
               ],
             },
+            {
+              type: "p",
+              children: [
+                {
+                  type: "a",
+                  props: {
+                    href: "https://www.linkedin.com/in/josefredesacevedo/",
+                    style: { color: "#fff", textDecoration: "none" },
+                  },
+                  children: ["LinkenIn"],
+                },
+              ],
+            },
           ],
         },
       ],
