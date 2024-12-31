@@ -29,7 +29,6 @@ const Page = () => {
         featuresSection,
         // About Section
         aboutSection,
-        // // Contact Section
         // Footer
         footerSection,
       ],
