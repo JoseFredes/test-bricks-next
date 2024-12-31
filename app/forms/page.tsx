@@ -13,24 +13,47 @@ const Page = () => {
         style: {
           fontFamily: "Arial, sans-serif",
           padding: "20px",
-          backgroundColor: "#f9f9f9",
+          backgroundColor: "#ffffff",
         },
       },
       children: [
+        {
+          type: "h1",
+          props: {
+            style: {
+              textAlign: "center",
+              fontSize: "32px",
+              color: "#333",
+              marginBottom: "20px",
+            },
+          },
+          children: ["Ejemplos de Formularios"],
+        },
         {
           type: "section",
           props: {
             id: "form-examples",
             style: {
-              padding: "40px 20px",
-              backgroundColor: "#f0f0f0",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "20px",
+              padding: "40px",
+              backgroundColor: "#ffffff",
             },
           },
           children: [
             // Simple Contact Form
             {
               type: "div",
-              props: { style: { marginBottom: "40px" } },
+              props: {
+                style: {
+                  padding: "20px",
+                  backgroundColor: "#f9f9f9",
+                  border: "1px solid #ddd",
+                  borderRadius: "8px",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                },
+              },
               children: [
                 {
                   type: "h3",
@@ -43,8 +66,6 @@ const Page = () => {
                     style: {
                       display: "flex",
                       flexDirection: "column",
-                      maxWidth: "400px",
-                      margin: "0 auto",
                     },
                   },
                   children: [
@@ -108,7 +129,15 @@ const Page = () => {
             // Survey Form
             {
               type: "div",
-              props: { style: { marginBottom: "40px" } },
+              props: {
+                style: {
+                  padding: "20px",
+                  backgroundColor: "#f9f9f9",
+                  border: "1px solid #ddd",
+                  borderRadius: "8px",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                },
+              },
               children: [
                 {
                   type: "h3",
@@ -121,8 +150,6 @@ const Page = () => {
                     style: {
                       display: "flex",
                       flexDirection: "column",
-                      maxWidth: "400px",
-                      margin: "0 auto",
                     },
                   },
                   children: [
@@ -141,26 +168,10 @@ const Page = () => {
                         },
                       },
                       children: [
-                        {
-                          type: "option",
-                          props: { value: "excellent" },
-                          children: ["Excelente"],
-                        },
-                        {
-                          type: "option",
-                          props: { value: "good" },
-                          children: ["Bueno"],
-                        },
-                        {
-                          type: "option",
-                          props: { value: "average" },
-                          children: ["Regular"],
-                        },
-                        {
-                          type: "option",
-                          props: { value: "poor" },
-                          children: ["Malo"],
-                        },
+                        { type: "option", props: { value: "excellent" }, children: ["Excelente"] },
+                        { type: "option", props: { value: "good" }, children: ["Bueno"] },
+                        { type: "option", props: { value: "average" }, children: ["Regular"] },
+                        { type: "option", props: { value: "poor" }, children: ["Malo"] },
                       ],
                     },
                     {
@@ -169,10 +180,7 @@ const Page = () => {
                     },
                     {
                       type: "input",
-                      props: {
-                        type: "checkbox",
-                        style: { marginBottom: "10px" },
-                      },
+                      props: { type: "checkbox", style: { marginBottom: "10px" } },
                     },
                     {
                       type: "button",
@@ -196,7 +204,15 @@ const Page = () => {
             // Login Form
             {
               type: "div",
-              props: { style: { marginBottom: "40px" } },
+              props: {
+                style: {
+                  padding: "20px",
+                  backgroundColor: "#f9f9f9",
+                  border: "1px solid #ddd",
+                  borderRadius: "8px",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                },
+              },
               children: [
                 {
                   type: "h3",
@@ -209,8 +225,6 @@ const Page = () => {
                     style: {
                       display: "flex",
                       flexDirection: "column",
-                      maxWidth: "400px",
-                      margin: "0 auto",
                     },
                   },
                   children: [
@@ -254,6 +268,91 @@ const Page = () => {
                         },
                       },
                       children: ["Iniciar Sesión"],
+                    },
+                  ],
+                },
+              ],
+            },
+            // Registration Form
+            {
+              type: "div",
+              props: {
+                style: {
+                  padding: "20px",
+                  backgroundColor: "#f9f9f9",
+                  border: "1px solid #ddd",
+                  borderRadius: "8px",
+                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                },
+              },
+              children: [
+                {
+                  type: "h3",
+                  props: { style: { fontSize: "24px", color: "#333" } },
+                  children: ["Formulario de Registro"],
+                },
+                {
+                  type: "form",
+                  props: {
+                    style: {
+                      display: "flex",
+                      flexDirection: "column",
+                    },
+                  },
+                  children: [
+                    {
+                      type: "input",
+                      props: {
+                        type: "text",
+                        placeholder: "Nombre Completo",
+                        style: {
+                          marginBottom: "10px",
+                          padding: "10px",
+                          border: "1px solid #ccc",
+                          borderRadius: "4px",
+                        },
+                      },
+                    },
+                    {
+                      type: "input",
+                      props: {
+                        type: "email",
+                        placeholder: "Correo Electrónico",
+                        style: {
+                          marginBottom: "10px",
+                          padding: "10px",
+                          border: "1px solid #ccc",
+                          borderRadius: "4px",
+                        },
+                      },
+                    },
+                    {
+                      type: "input",
+                      props: {
+                        type: "password",
+                        placeholder: "Contraseña",
+                        style: {
+                          marginBottom: "10px",
+                          padding: "10px",
+                          border: "1px solid #ccc",
+                          borderRadius: "4px",
+                        },
+                      },
+                    },
+                    {
+                      type: "button",
+                      props: {
+                        type: "submit",
+                        style: {
+                          padding: "10px 20px",
+                          backgroundColor: "#00796b",
+                          color: "#fff",
+                          border: "none",
+                          borderRadius: "5px",
+                          cursor: "pointer",
+                        },
+                      },
+                      children: ["Registrar"],
                     },
                   ],
                 },
