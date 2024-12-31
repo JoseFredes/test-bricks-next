@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { JSONComponent, renderComponentFromJSON } from "jbricks";
+import { JSONComponent, renderComponentFromJSON,  } from "jbricks";
 import { navbar } from "./components/homeBricks/navbar";
 import { heroSection } from "./components/homeBricks/heroSection";
 import { featuresSection } from "./components/homeBricks/featuresSection";
