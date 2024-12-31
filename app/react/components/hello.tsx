@@ -10,7 +10,7 @@ function renderReactComponent(json: JSONComponent): JSX.Element {
     type,
     {
       ...props,
-      key: props.key || undefined, // Asegura que cada elemento tenga una clave única
+      key: props.key || undefined,
     },
     Array.isArray(children)
       ? children.map((child, index) =>
