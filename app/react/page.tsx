@@ -1,3 +1,5 @@
+"use client";
+
 import ReactPage from "./components/hello";
 
 export default function Page() {
