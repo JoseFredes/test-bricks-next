@@ -310,7 +310,7 @@ const Page = () => {
                         type: "password",
                         placeholder: "Contraseña",
                         style: {
-                          marginBottom: "10px",
+                          marginBottom: "20px",
                           padding: "10px",
                           outline: "1px solid #00796b",
                           border: "none",
