@@ -174,6 +174,21 @@ const Page = () => {
                   props: { style: { fontSize: "20px", color: "#00796b" } },
                   children: ["Mira los ejemplos:"],
                 },
+                {
+                  type: "button",
+                  props: {
+                    style: {
+                      padding: "10px 20px",
+                      backgroundColor: "#00796b",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: "5px",
+                      cursor: "pointer",
+                    },
+                    onClick: () => (window.location.href = "/forms"),
+                  },
+                  children: ["Ver ejemplos de formularios"],
+                },
               ],
             },
             {
