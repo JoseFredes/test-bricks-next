@@ -18,16 +18,45 @@ const Page = () => {
       },
       children: [
         {
-          type: "h1",
+          type: "div",
           props: {
             style: {
-              textAlign: "center",
-              fontSize: "32px",
-              color: "#333",
+              display: "flex",
+              //   alignItems: "center",
               marginBottom: "20px",
+              marginTop: "10px",
+              justifyContent: "space-between",
             },
           },
-          children: ["Ejemplos de Formularios"],
+          children: [
+            {
+              type: "h1",
+              props: {
+                style: {
+                  textAlign: "center",
+                  fontSize: "32px",
+                  color: "#333",
+                  marginBottom: "20px",
+                },
+              },
+              children: ["Ejemplos de Formularios"],
+            },
+            {
+              type: "button",
+              props: {
+                style: {
+                  backgroundColor: "#007bff",
+                  color: "#fff",
+                  padding: "10px 20px",
+                  border: "none",
+                  borderRadius: "4px",
+                  cursor: "pointer",
+                },
+                onClick: () => (window.location.href = "/"),
+              },
+              children: ["Volver al Home"],
+            },
+          ],
         },
         {
           type: "section",
