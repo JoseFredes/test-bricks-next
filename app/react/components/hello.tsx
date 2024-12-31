@@ -43,7 +43,10 @@ const json: JSONComponent = {
           borderRadius: "4px",
           cursor: "pointer",
         },
-        onClick: () => alert("Hello, World!"),
+        onClick: () => {
+          console.log("Hello, World!");
+          alert("Hello, World!");
+        },
       },
       children: ["Click me!"],
     },
