@@ -28,6 +28,17 @@ const json: JSONComponent = {
       },
     },
     {
+      type: "p",
+      props: {
+        style: {
+          fontSize: "16px",
+          color: "#666",
+          marginBottom: "20px",
+        },
+        children: ["This is a simple React component rendered by JBricks."],
+      },
+    },
+    {
       type: "CounterComponent",
       props: { className: "counter-class" },
     },
