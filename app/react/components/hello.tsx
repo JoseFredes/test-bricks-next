@@ -17,6 +17,17 @@ const json: JSONComponent = {
   },
   children: [
     {
+      type: "h1",
+      props: {
+        style: {
+          fontSize: "32px",
+          color: "#333",
+          marginBottom: "20px",
+        },
+        children: ["Hello from React"],
+      },
+    },
+    {
       type: "CounterComponent",
       props: { className: "counter-class" },
     },
