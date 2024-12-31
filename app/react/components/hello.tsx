@@ -13,6 +13,7 @@ const json: JSONComponent = {
       backgroundColor: "#f5f5f5",
       border: "1px solid #ddd",
       typography: "Arial, sans-serif",
+      textAlign: "center",
     },
   },
   children: [
