@@ -45,6 +45,7 @@ const json: JSONComponent = {
                 height: "40px",
                 marginTop: "20px",
               },
+              onClick: () => (window.location.href = "/"),
               children: ["Home"],
             },
           },
