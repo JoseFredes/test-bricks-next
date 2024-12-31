@@ -6,7 +6,6 @@ export function safeRenderReactComponent(json: JSONComponent): JSX.Element {
     return <div>SSR: Placeholder</div>;
   }
 
-  // Llama a renderComponentFromJSON solo en el cliente
   const domNode = renderComponentFromJSON(json);
 
   return (
