@@ -52,7 +52,7 @@ const Page = () => {
                 style: {
                   backgroundColor: "#00796b",
                   color: "#fff",
-                  padding: "5px 10px",
+                  padding: "10px 5px",
                   border: "none",
                   borderRadius: "4px",
                   cursor: "pointer",
