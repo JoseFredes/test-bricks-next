@@ -47,10 +47,11 @@ const Page = () => {
                 style: {
                   backgroundColor: "#007bff",
                   color: "#fff",
-                  padding: "10px 20px",
+                  padding: "5px 10px",
                   border: "none",
                   borderRadius: "4px",
                   cursor: "pointer",
+                  height: "40px",
                 },
                 onClick: () => (window.location.href = "/"),
               },
