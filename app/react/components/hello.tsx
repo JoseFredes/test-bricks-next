@@ -1,7 +1,7 @@
 "use client";
 
-import { JSONComponent } from "jbricks";
-import { safeRenderReactComponent } from "../utils/safeRenderReactComponent";
+import React, { useEffect, useState } from "react";
+import { JSONComponent, renderComponentFromJSON } from "jbricks";
 
 const json: JSONComponent = {
   type: "div",
@@ -13,5 +13,20 @@ const json: JSONComponent = {
 };
 
 export default function ReactPage() {
-  return safeRenderReactComponent(json);
+  const [content, setContent] = useState<JSX.Element | null>(null);
+
+  useEffect(() => {
+    // Renderiza dinámicamente el contenido JSON
+    const domNode = renderComponentFromJSON(json);
+    setContent(
+      <div
+        dangerouslySetInnerHTML={{
+          __html: domNode ? domNode.outerHTML : "",
+        }}
+      />
+    );
+  }, []);
+
+  // Mientras se renderiza, muestra un placeholder
+  return content || <div>Cargando...</div>;
 }
