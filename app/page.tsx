@@ -291,6 +291,7 @@ const Page = () => {
               backgroundColor: "#333",
               color: "#fff",
               textAlign: "center",
+              marginTop: "20px",
             },
           },
           children: [
