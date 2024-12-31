@@ -1,6 +1,6 @@
 import { JSONComponent } from "jbricks";
 
-export const registationForm: JSONComponent = {
+export const registrationForm: JSONComponent = {
   type: "div",
   props: {
     style: {
